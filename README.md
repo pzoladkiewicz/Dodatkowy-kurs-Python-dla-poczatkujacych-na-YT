@@ -73,3 +73,5 @@ print(phrase.index("Acad"))     # 8
 
 print(phrase.replace("Giraffe", "Elephant"))
 ```
+
+### Working with numbers
