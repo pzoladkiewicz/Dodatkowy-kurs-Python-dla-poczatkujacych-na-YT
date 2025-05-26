@@ -104,3 +104,16 @@ print(m.ceil(3.1))
 ```
 
 ### Getting input from users
+```python
+name = input("Enter your name: ")
+print("Hello " + name + "!" )
+
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello " + name + "! You are " + age)
+```
+
+### Building a basic calculator
+
+
+
