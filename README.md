@@ -114,6 +114,80 @@ print("Hello " + name + "! You are " + age)
 ```
 
 ### Building a basic calculator
+```python
+num1 = input("Enter a number: ")                # 5
+num2 = input("Enter another number: ")          # 8.3
+result = num1 + num2                            # 58.3 
+print(result)                               
 
+num1 = input("Enter a number: ")                # 5
+num2 = input("Enter another number: ")          # 8.3
+result = int(num1) + float(num2)                # 13.3 
+print(result)
+```
 
+### Mad libs game
+```python
+color = input("Enter a color: ")
+plurar_noun = input("Enter a Plurar Noun: ")
+celebrity = input("Enter a celebrity: ")
 
+print("Roses are " + color)
+print(plurar_noun + " are blue")
+print("I love " + celebrity)
+```
+
+### Lists
+```python
+list_example = ["Kevin", 2 , False]     # anything
+
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+print(friends)
+print(friends[0])                       # Kevin
+print(friends[-1])                      # Jim
+print(friends[3:])                      # ['Oscar', 'Toby']
+print(friends[1:3])                     # ['Karen', 'Jim']
+
+friends[1] = 'Mike'
+print(friends[1])                       # Mike
+```
+
+### List functions
+```python
+lucky_numbers = [42, 8, 15, 16, 23]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+print(friends)                      # ['Kevin', 'Karen', 'Jim', 'Oscar', 'Toby']
+
+friends.extend(lucky_numbers)
+print(friends)                      # ['Kevin', 'Karen', 'Jim', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42]    
+
+friends.append("Creed")
+print(friends)                      # ['Kevin', 'Karen', 'Jim', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42, 'Creed']
+
+friends.insert(1, "Kelly")
+print(friends)                      # ['Kevin', 'Kelly', 'Karen', 'Jim', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42, 'Creed']
+
+friends.remove("Jim")
+print(friends)                      # ['Kevin', 'Kelly', 'Karen', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42, 'Creed']
+
+friends.pop()                       # last
+print(friends)                      # ['Kevin', 'Kelly', 'Karen', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42]
+
+print(friends.index("Kevin"))       # 0         -- index or error
+print(friends.count("Toby"))        # 1
+
+lucky_numbers.sort()
+print(lucky_numbers)
+
+lucky_numbers.reverse()
+print(lucky_numbers)
+
+friends.sort()                      # not supported between instances of 'int' and 'str'
+print(friends)
+
+friends2 = friends.copy()
+print(friends2)
+
+friends.clear()
+print(friends)                      # []
+```
